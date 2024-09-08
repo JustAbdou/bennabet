@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div>
+        <ul class="nav-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="image-text-container">
+        <img src="./assets/opengl.png" alt="app of image" class="image" />
+        <div class="text-content">
+            <h2>Learning Graphics Rendering and Texture Mapping in OpenGL</h2>
+            <p>
+                In a graphics course, I had the opportunity to delve into the intricacies of texture rendering and graphics pipelines. Through this coursework, I learned how to create and manipulate texture maps, which are essential for giving 3D models more realistic appearances. This was achieved using OpenGL, an industry-standard API for rendering 2D and 3D vector graphics. The course provided me with hands-on experience in applying these techniques to build visually engaging and accurate computer-generated imagery.
+            </p>
+
+            <h2>Developing a Rendering Pipeline with OpenGL</h2>
+            <p>
+                A significant part of the project involved creating a rendering pipeline using OpenGL. The rendering pipeline was responsible for handling the entire process of converting 3D models into 2D images on the screen. I worked with various stages of the pipeline, including vertex processing, rasterization, fragment processing, and finally, outputting the image. Through this, I gained a deeper understanding of how graphics rendering works at a low level and how each component of the pipeline contributes to the final visual output.
+            </p>
+
+            <h2>Implementing Texture Mapping and Shading Techniques</h2>
+            <p>
+                One of the most challenging yet rewarding aspects of the project was learning how to implement texture mapping. This technique involves applying a 2D image, or texture, onto a 3D object to give it a more detailed and realistic appearance. By understanding the mathematical principles behind texture coordinates and mapping techniques, I was able to create textured models that enhanced the visual quality of the scenes.
+            </p>
+
+            <h2>Exploring Advanced Graphics Techniques</h2>
+            <p>
+                In addition to basic texture mapping, I also explored advanced shading techniques using OpenGL shaders. I implemented vertex and fragment shaders to control the lighting and shading of objects in the scene. These shaders allowed me to manipulate how light interacts with textures, producing effects such as specular highlights, shadows, and reflections. This deepened my knowledge of how real-time rendering engines operate and how to control the visual appearance of 3D models.
+            </p>
+
+            <p>
+                This project not only strengthened my technical skills in OpenGL and graphics rendering but also gave me a broader appreciation of the complexities involved in creating realistic computer-generated imagery. I learned how to optimize rendering performance and troubleshoot graphical artifacts, ensuring that the final result was both efficient and visually impressive. The experience enhanced my problem-solving abilities and gave me a solid foundation in computer graphics that I am eager to continue developing.
+            </p>
+            <button class="project-button btn btn-color-2" onclick="window.open('files/graphics.pdf')">Download Full Report</button>
+        </div>
+    </div>
+    
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abderrahmane Bennabet. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    
+</html>

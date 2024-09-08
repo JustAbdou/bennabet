@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div>
+        <ul class="nav-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="image-text-container">
+        <img src="./assets/turtlebot.png" alt="app of image" class="image" />
+        <div class="text-content">
+            <h2 class="project-title-description">Building an Intelligent Robot System Using <bold style="color:brown ;">ROS and Machine Learning</bold></h2>
+            <p>
+                As part of a module in Robotics, I had the opportunity to work on an exciting project involving the TurtleBot. Throughout this project, I learned to work with the Robot Operating System (ROS), which was integral to the robot's functionality. The objective was to create an intelligent robot system using machine learning techniques that could navigate into a room, identify whether the room contained an image of Earth or the Moon, and distinguish between other planetary objects.
+            </p>
+
+            <h2>Motion Planning and Efficient Room Exploration</h2>
+            <p>
+                A critical aspect of the project was programming an efficient motion planning algorithm for the robot. The task required the robot to visit every part of the room within a strict 3-minute time limit, so it was essential to optimize the robot's movements. Through careful planning and programming, we ensured that the robot could explore the room efficiently and perform its identification tasks within the time constraints.
+            </p>
+
+            <p>
+                This project gave me hands-on experience with key technologies, including ROS, Python, and machine learning techniques. I was able to deepen my understanding of robotic systems, from programming low-level robot control to implementing high-level decision-making algorithms. Through trial and error, I honed my problem-solving skills, learning how to troubleshoot complex issues and optimize performance under pressure.
+            </p>
+
+            <p>
+                Working on the TurtleBot project was a challenging yet rewarding experience. It not only enhanced my technical abilities but also strengthened my teamwork and project management skills. The experience taught me the value of integrating different systems—ranging from hardware control to machine learning algorithms—to create a fully functional and intelligent robot. It also inspired me to continue exploring the fascinating field of robotics.
+            </p>
+
+            <button class="project-button btn btn-color-2" onclick="window.open('files/robotics.pdf')">Download Full Report</button>
+        </div>
+    </div>
+    
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abderrahmane Bennabet. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    
+</html>

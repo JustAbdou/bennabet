@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div>
+        <ul class="nav-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="image-text-container">
+        <img src="./assets/app.png" alt="app of image" class="image" />
+        <div class="text-content">
+            <h2 class="project-title-description">AlgoLearn</h2>
+            <p>
+                As my final year project, I developed "AlgoLearn," an Android application designed to support new computer science students in mastering algorithms through an interactive learning experience. This project represented my first foray into mobile application development, providing me with the opportunity to learn and apply Android development techniques from the ground up.
+            </p>
+            <p>
+                The application features a variety of interactive tools, including algorithm visualizations, step-by-step guides, and quizzes that reinforce the learning material. The goal was to make complex concepts more accessible to beginners by allowing them to see algorithms in action and practice their knowledge in a hands-on manner.
+            </p>
+            <p>
+                Throughout the development process, I familiarized myself with key technologies such as Android Studio, Java, and XML for designing the user interface. I also implemented various Android components, such as activities, fragments, and view models, to create a seamless and intuitive user experience. Additionally, I integrated educational content and assessments to provide a comprehensive learning environment within the app.
+            </p>
+            <p>
+                This project was both challenging and incredibly rewarding. As someone new to Android development, I faced a steep learning curve but was able to overcome it through persistence and a passion for learning. The experience not only enhanced my technical skills in mobile development but also deepened my understanding of how to design educational tools that effectively engage users. "AlgoLearn" is a testament to my ability to take on new challenges, learn rapidly, and deliver a functional and impactful software solution.
+            </p>
+            <button class="project-button btn btn-color-2" onclick="window.open('files/Final_report.pdf')">Download Full Report</button>
+        </div>
+    </div>
+    
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abderrahmane Bennabet. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    
+</html>

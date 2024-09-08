@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div>
+        <ul class="nav-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo" onclick="location.href='./#about'">Abderrahmane Bennabet</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="image-text-container">
+        <img src="./assets/ai.png" alt="app of image" class="image" />
+        <div class="text-content">
+            <h2 class="project-title-description">Building and Comparing <bold style="color:brown ;">Machine Learning</bold> Models for Data Analysis</h2>
+            <h2></h2>
+            <p>
+                One of the key projects I worked on involved building a machine learning model to predict outcomes based on a dataset. The process began with data cleaning and exploration, where I analyzed the distribution of features and identified any potential outliers using histograms. This helped me ensure the data was well-prepared for training. The goal was to develop a robust model that could generalize well to new data, and to do so, I compared multiple regression models to identify the best performer.
+            </p>
+
+            <h2>Data Cleaning and Exploration</h2>
+            <p>
+                The first step in the process was to clean the dataset, which involved handling missing values and addressing outliers. By plotting histograms and box plots, I was able to visualize the distribution of features and remove any anomalies that could distort the model’s performance. Data preprocessing was crucial for ensuring the integrity and consistency of the dataset before feeding it into the machine learning algorithms.
+            </p>
+
+            <h2>Model Development Using Multiple Regression Techniques</h2>
+            <p>
+                After cleaning the data, I divided it into training and test sets using <strong>train_test_split</strong> from the <strong>scikit-learn</strong> library. The training data was used to build three different regression models: Linear Regression, Lasso Regression, and Ridge Regression. Each of these models has its own strengths, and comparing them allowed me to determine which model best fit the data.
+            </p>
+            <p>
+                I used the <strong>Linear Regression</strong> model as a baseline, followed by Lasso and Ridge regressions, which apply regularization to prevent overfitting. To implement these models, I utilized the <strong>LinearRegression</strong>, <strong>LassoCV</strong>, and <strong>RidgeCV</strong> classes from scikit-learn. By tuning hyperparameters such as alpha for Lasso and Ridge models, I was able to further optimize the model performance.
+            </p>
+
+            <h2>Evaluating Model Performance</h2>
+            <p>
+                Once the models were trained, I evaluated their performance on the test set using the <strong>Mean Squared Error (MSE)</strong> metric. This allowed me to quantify the difference between the predicted values and the actual targets, making it easier to compare the models. The predictions from each model were generated and the MSE for each was calculated.
+            </p>
+            <p>
+                The MSE scores for the models were as follows:
+                <ul>
+                    <li><strong>Linear Regression (OLS)</strong> - MSE: <em>ols_mse_value</em></li>
+                    <li><strong>Lasso Regression</strong> - MSE: <em>lasso_mse_value</em></li>
+                    <li><strong>Ridge Regression</strong> - MSE: <em>ridge_mse_value</em></li>
+                </ul>
+                By comparing these values, I identified the model with the lowest MSE as the best performer for this particular dataset.
+            </p>
+
+            <h2>Choosing the Best Model</h2>
+            <p>
+                After evaluating the models, I found that the <strong>best model</strong> was the one with the lowest MSE, indicating that it had the best predictive performance on the test data. This process of comparing multiple models allowed me to not only understand the trade-offs between different regression techniques but also provided insights into model selection and hyperparameter tuning.
+            </p>
+
+            <p>
+                Overall, this project deepened my understanding of machine learning workflows, from data cleaning to model evaluation. It enhanced my ability to implement and compare machine learning algorithms effectively, giving me a solid foundation in predictive modeling and data-driven decision making.
+            </p>
+        </div>
+    </div>
+    
+    
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abderrahmane Bennabet. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    
+</html>
